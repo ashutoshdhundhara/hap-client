@@ -271,6 +271,7 @@ export class HapClient extends EventEmitter {
             format: 'string',
             value: accessoryInformation.Name || this.humanizeString(Services[s.type]),
             perms: ['pr'],
+            statusCode: 0,
           };
 
           /* Parse Service Characteristics */
@@ -295,6 +296,7 @@ export class HapClient extends EventEmitter {
                 canRead: c.perms.includes('pr'),
                 canWrite: c.perms.includes('pw'),
                 ev: c.perms.includes('ev'),
+                statusCode: c.statusCode,
               };
             });
 

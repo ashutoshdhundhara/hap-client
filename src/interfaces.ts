@@ -44,6 +44,7 @@ export interface HapAccessoriesRespType {
         maxValue?: number;
         minValue?: number;
         minStep?: number;
+        statusCode: number;
       }>;
     }>;
   }>;
@@ -104,6 +105,7 @@ export interface CharacteristicType {
   ev: boolean;
   setValue?: (value: number | string | boolean) => Promise<CharacteristicType>;
   getValue?: () => Promise<CharacteristicType>;
+  statusCode: number;
 }
 
 export interface AccessoryInformationProperties {
