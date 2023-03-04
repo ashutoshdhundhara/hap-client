@@ -312,6 +312,7 @@ export class HapClient extends EventEmitter {
             values: {},
             linked: s.linked,
             instance: accessory.instance,
+            category: accessory.category,
           };
 
           // generate unique id for service
