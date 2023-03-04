@@ -49,6 +49,7 @@ export interface HapAccessoriesRespType {
                 statusCode: number;
             }>;
         }>;
+        category: number;
     }>;
 }
 export interface HapCharacteristicRespType {
@@ -83,6 +84,7 @@ export interface ServiceType {
         name: string;
     };
     uniqueId?: string;
+    category: number;
 }
 export interface CharacteristicType {
     aid: number;

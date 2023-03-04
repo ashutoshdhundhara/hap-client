@@ -259,6 +259,7 @@ class HapClient extends events_1.EventEmitter {
                     values: {},
                     linked: s.linked,
                     instance: accessory.instance,
+                    category: accessory.category,
                 };
                 service.uniqueId = crypto.createHash('sha256')
                     .update(`${service.instance.username}${service.aid}${service.iid}${service.type}`)
