@@ -1,8 +1,11 @@
 {
-  "name": "@oznu/hap-client",
+  "name": "@ashutoshdhundhara/hap-client",
   "version": "1.9.0",
   "description": "A client for HAP-NodeJS",
   "main": "./dist/index.js",
+  "publishConfig": {
+    "@ashutoshdhundhara:registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
@@ -12,7 +15,7 @@
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/oznu/hap-client.git"
+    "url": "git://github.com/ashutoshdhundhara/hap-client.git"
   },
   "keywords": [
     "hap",
@@ -21,10 +24,6 @@
   ],
   "author": "oznu <dev@oz.nu>",
   "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/oznu/hap-api/issues"
-  },
-  "homepage": "https://github.com/oznu/hap-api#readme",
   "devDependencies": {
     "@types/node": "^16.11.36",
     "hap-nodejs": "^0.10.2",
